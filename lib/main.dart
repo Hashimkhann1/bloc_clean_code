@@ -1,3 +1,6 @@
+import 'package:bloc_clean_coding/config/routes/routes.dart';
+import 'package:bloc_clean_coding/config/routes/routes_name.dart';
+import 'package:bloc_clean_coding/views/splash_view/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +19,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Column(),
+      initialRoute: RoutesName.splashView,
+      onGenerateRoute: Routes.genrateRoute,
     );
   }
 }
